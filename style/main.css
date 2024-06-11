@@ -3,6 +3,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Cairo&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Almarai&display=swap');
 
+/* Customize the entire scrollbar */
+::-webkit-scrollbar {
+  width: 0px; /* Width of the vertical scrollbar */
+  height: 0px; /* Height of the horizontal scrollbar */
+}
+
+/* Customize the thumb (draggable part) */
+::-webkit-scrollbar-thumb {
+  background: transparent; /* Color of the scrollbar thumb */
+  /* border-radius: 10px; Roundness of the scrollbar thumb */
+}
+
+/* Customize the scrollbar track */
+::-webkit-scrollbar-track {
+  background: transparent; /* Color of the scrollbar track */
+  /* border-radius: 10px; Roundness of the scrollbar track */
+}
+
+/* Customize the scrollbar thumb on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #111; /* Color of the scrollbar thumb when hovered */
+}
+
 body {
     background-color: black;
     color: white;
@@ -10,16 +33,40 @@ body {
 }
 
 main {
-    height: 100vh;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0 2%;
+    flex-direction: column;
 }
 
 .typing-text {
-    font-size: 40px;
+    font-size: 38px;
     direction: rtl;
-    text-align: center;
+    text-align: right;
     font-family: "Amiri";
+    border: 1px solid rgba(255, 255, 255, 0.205);
+    border-radius: 12px;
+    width: 80vw;
+    min-height: 30vh;
+    padding: 5%;
+    display: flex;
+    align-items: flex-start;
+
+
 }
+
+.typing-cursor {
+    color: transparent;
+}
+
+.typing-cont {
+    height: 100vh;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+}
+
+.about {
+    height: 100vh;
+    display: flex;
+}
+
