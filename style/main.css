@@ -5,68 +5,110 @@
 
 /* Customize the entire scrollbar */
 ::-webkit-scrollbar {
-  width: 0px; /* Width of the vertical scrollbar */
-  height: 0px; /* Height of the horizontal scrollbar */
+  width: 0px;
+  /* Width of the vertical scrollbar */
+  height: 0px;
+  /* Height of the horizontal scrollbar */
 }
 
 /* Customize the thumb (draggable part) */
 ::-webkit-scrollbar-thumb {
-  background: transparent; /* Color of the scrollbar thumb */
+  background: transparent;
+  /* Color of the scrollbar thumb */
   /* border-radius: 10px; Roundness of the scrollbar thumb */
 }
 
 /* Customize the scrollbar track */
 ::-webkit-scrollbar-track {
-  background: transparent; /* Color of the scrollbar track */
+  background: transparent;
+  /* Color of the scrollbar track */
   /* border-radius: 10px; Roundness of the scrollbar track */
 }
 
 /* Customize the scrollbar thumb on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #111; /* Color of the scrollbar thumb when hovered */
+  background: #111;
+  /* Color of the scrollbar thumb when hovered */
 }
 
 body {
-    background-color: black;
-    color: white;
-    margin: 0;
+  background-color: black;
+  color: white;
+  margin: 0;
 }
 
 main {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .typing-text {
-    font-size: 38px;
-    direction: rtl;
-    text-align: right;
-    font-family: "Amiri";
-    border: 1px solid rgba(255, 255, 255, 0.205);
-    border-radius: 12px;
-    width: 80vw;
-    min-height: 30vh;
-    padding: 5%;
-    display: flex;
-    align-items: flex-start;
+  font-size: 38px;
+  direction: rtl;
+  text-align: right;
+  font-family: "Amiri";
+  border: 1px solid rgba(255, 255, 255, 0.205);
+  border-radius: 12px;
+  width: 80vw;
+  min-height: 30vh;
+  padding: 5%;
+  display: flex;
+  align-items: flex-start;
 
 
 }
 
 .typing-cursor {
-    color: transparent;
+  color: transparent;
 }
 
 .typing-cont {
-    height: 100vh;
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: center;
-    align-items: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
 }
+
+/* About Section */
 
 .about {
-    height: 100vh;
-    display: flex;
+  display: flex;
+  flex-direction: column;
+  padding: 0 5%;
 }
 
+.aboutTitle {
+  height: 15vh;
+  display: flex;
+  align-items: flex-end;
+  padding: 0 7%;
+  font-size: 42px;
+
+}
+
+.aboutP-I {
+  min-height: 85vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.aboutP {
+  width: 500px;
+  height: 400px;
+  margin: 1%;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.aboutI {
+  height: 400px;
+  width: 400px;
+  margin: 1%;
+  background-color: white;
+  border-radius: 12px;
+}
