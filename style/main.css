@@ -43,8 +43,8 @@
 }
 
 body {
-  background-color: black;
-  color: white;
+  background-color: #000000 ;
+  color: #e0e0e0;
   margin: 0;
 }
 
@@ -58,6 +58,7 @@ main {
   direction: rtl;
   text-align: right;
   font-family: "Amiri";
+  
   border: 1px solid rgba(255, 255, 255, 0.205);
   border-radius: 12px;
   width: 80vw;
@@ -90,15 +91,15 @@ main {
 }
 
 .aboutTitle {
-  height: 15vh;
+   min-height: 15vh;
   display: flex;
   align-items: flex-end;
   justify-content: flex-end;
   text-align: right;
   padding: 0 7%;
-  font-size: 42px;
-  font-family: "lora", serif;
+  font-size: 45px;
   font-weight: 500;
+  font-family: "Tajawal";
 
 
 }
@@ -114,7 +115,7 @@ main {
 
 .aboutP {
   width: 600px;
-  height: 400px;
+  min-height: 400px;
   margin: 1%;
   font-size: 22px;
   line-height: 26.5px;
@@ -128,7 +129,8 @@ main {
 }
 
 .aboutI {
-  height: 400px;
+  min-height: 400px;
   width: 400px;
   margin: 1%;
+  border-radius: 12px;
 }

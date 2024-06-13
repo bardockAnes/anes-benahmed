@@ -1,4 +1,5 @@
 'use client';
+
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
@@ -22,6 +23,15 @@ function About() {
     visible: { opacity: 1, y: 0 },
   };
 
+  const boxVariants = {
+    rest: {
+      scale: 1,
+    },
+    hover: {
+      scale: 1.1,
+    },
+  };
+
   return (
     <section className='about' ref={ref}>
       <motion.div
@@ -31,7 +41,7 @@ function About() {
         variants={titleVariants}
         transition={{ duration: 0.5, ease: 'easeInOut' }}
       >
-  من أنا
+        من أنا
       </motion.div>
       <div className='aboutP-I'>
         <motion.div
@@ -50,7 +60,13 @@ function About() {
           variants={paragraphVariants}
           transition={{ duration: 0.5, delay: 1.0, ease: 'easeInOut' }}
         >
-          <Image src={openImg} alt={''} width={400} height={400} style={{borderRadius:12}}/>
+          <motion.div
+            variants={boxVariants}
+            whileHover="hover"
+            style={{ borderRadius: 12 }}
+          >
+            <Image src={openImg} alt={''} width={400} height={400} style={{borderRadius:12}} />
+          </motion.div>
         </motion.div>
       </div>
     </section>
