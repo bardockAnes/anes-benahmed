@@ -2,10 +2,13 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
+import { biography } from '@/data/about';
+import Image from 'next/image';
+import openImg from '@/public/open .jpeg'
 
 function About() {
   const { ref, inView } = useInView({
-    triggerOnce: false,
+    triggerOnce: true,
     threshold: 0.1,
   });
 
@@ -28,7 +31,7 @@ function About() {
         variants={titleVariants}
         transition={{ duration: 0.5, ease: 'easeInOut' }}
       >
-        About Me
+  من أنا
       </motion.div>
       <div className='aboutP-I'>
         <motion.div
@@ -38,8 +41,7 @@ function About() {
           variants={paragraphVariants}
           transition={{ duration: 0.5, delay: 0.5, ease: 'easeInOut' }}
         >
-          Once upon a time, in a quaint village nestled between rolling hills and lush forests, there was a little girl named Emma. Emma was known throughout the village for her boundless curiosity and adventurous spirit. Her favorite pastime was exploring the mysterious Whispering Woods that bordered the village.
-          One bright summer morning, Emma set out on one of her many adventures, accompanied by her loyal dog, Max. As they ventured deeper into the woods, they stumbled upon an ancient oak tree with a peculiar marking carved into its trunk. The marking resembled a small door, intricately detailed with swirling patterns and symbols.
+         {biography}
         </motion.div>
         <motion.div
           className="aboutI"
@@ -48,7 +50,7 @@ function About() {
           variants={paragraphVariants}
           transition={{ duration: 0.5, delay: 1.0, ease: 'easeInOut' }}
         >
-          {/* Add any image or content here */}
+          <Image src={openImg} alt={''} width={400} height={400} style={{borderRadius:12}}/>
         </motion.div>
       </div>
     </section>

@@ -2,6 +2,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Amiri&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cairo&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Almarai&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Garamond&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
 
 /* Customize the entire scrollbar */
 ::-webkit-scrollbar {
@@ -82,33 +93,42 @@ main {
   height: 15vh;
   display: flex;
   align-items: flex-end;
+  justify-content: flex-end;
+  text-align: right;
   padding: 0 7%;
   font-size: 42px;
+  font-family: "lora", serif;
+  font-weight: 500;
+
 
 }
 
 .aboutP-I {
   min-height: 85vh;
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse;
   justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
 }
 
 .aboutP {
-  width: 500px;
+  width: 600px;
   height: 400px;
   margin: 1%;
-  font-size: 16px;
+  font-size: 22px;
+  line-height: 26.5px;
   display: flex;
   align-items: center;
+  text-align: right;
+  font-family: "Tajawal";
+  font-weight: 300;
+  
+
 }
 
 .aboutI {
   height: 400px;
   width: 400px;
   margin: 1%;
-  background-color: white;
-  border-radius: 12px;
 }
