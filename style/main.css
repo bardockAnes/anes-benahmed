@@ -43,7 +43,7 @@
 }
 
 body {
-  background-color: #000000 ;
+  background-color: #000000;
   color: #e0e0e0;
   margin: 0;
 }
@@ -58,7 +58,7 @@ main {
   direction: rtl;
   text-align: right;
   font-family: "Amiri";
-  
+
   border: 1px solid rgba(255, 255, 255, 0.205);
   border-radius: 12px;
   width: 80vw;
@@ -91,7 +91,7 @@ main {
 }
 
 .aboutTitle {
-   min-height: 15vh;
+  min-height: 15vh;
   display: flex;
   align-items: flex-end;
   justify-content: flex-end;
@@ -124,7 +124,7 @@ main {
   text-align: right;
   font-family: "Tajawal";
   font-weight: 300;
-  
+
 
 }
 
@@ -133,4 +133,90 @@ main {
   width: 400px;
   margin: 1%;
   border-radius: 12px;
+}
+
+.worksSection {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 0 2%;
+}
+
+.worksTitle {
+  text-align: right;
+  font-size: 45px;
+  font-weight: 500;
+  font-family: "Tajawal";
+  line-height: 150%;
+}
+
+.works {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 4vh;
+}
+
+.workDiv {
+border: 1px solid rgba(255, 255, 255, 0.507);
+  width: 27%;
+  height: 27vh;
+  text-align: right;
+  font-family: 'Tajawal';
+  border-radius: 10px;
+  padding: 0px 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+}
+.workDiv:hover {
+ .workDivP{
+  color: #fff;
+ }
+ .workDivT{
+  color: #fff;
+ }
+ .workDivA,.workDivAA{
+  color: #fff;
+
+ };
+ border: 1px solid rgba(0, 148, 148, 0.514) ;
+  
+  }
+
+
+
+.workDivT {
+  font-size: large;
+  font-weight: 700;
+  color: white;
+}
+
+
+.workDivA {
+  text-decoration: none;
+  color: #009394 ;
+  font-weight: 600;
+  flex: 1;
+  letter-spacing: 0.5px;
+
+}
+
+.workDivAA {
+  text-decoration: none;
+  color: whitesmoke;
+  font-weight: 600;
+  flex: 1;
+  color: #009394 ;
+
+
+}
+
+.AA{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+
 }
